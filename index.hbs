@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Endel Dreyer - Portfolio</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="https://avatars1.githubusercontent.com/u/130494?v=3&s=16">
+
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/mediaelement/build/mediaelementplayer.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js js/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="modal hidden">
+      <div class="container">
+        <a class="close" href="#"></a>
+        {{#each modal_items}}
+          <article id="{{ id }}" style="display: none;">
+            <header>
+
+              <div class="left">
+                <span class="bg {{ client }}"></span>
+              </div>
+
+              <div class="right">
+                <h1>{{ title }}</h1>
+                <h2>{{ company }}</h2>
+                <p>{{ year }}</p>
+              </div>
+            </header>
+
+            {{{ description }}}
+
+            <div class="main-item"></div>
+
+            <nav class="scroll-x">
+              <ul class="gallery" style="width: {{ gallery_width gallery }}">
+              {{#each gallery}}
+                {{#if url}}
+                <li><a href="#" data-video="{{ url }}" data-video-source="{{ source }}" style="background: url({{ thumbnail }}); background-size: cover; background-position: 50% 0;"></a></li>
+                {{else}}
+                <li><a href="#" data-image="{{ . }}" style="background: url({{ . }}); background-size: cover; background-position: 50% 0;"></a></li>
+                {{/if}}
+              {{/each}}
+              </ul>
+            </nav>
+
+          </article>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <div class="left">
+          <img src="https://avatars1.githubusercontent.com/u/130494?v=3&s=100" alt="@endel" />
+        </div>
+
+        <div class="right">
+          <h1>Endel Dreyer</h1>
+          <h2>Software engineer</h2>
+          <div class="social">
+            <a target="_blank" href="https://github.com/endel" class="fa fa-github"></a>
+            <a target="_blank" href="https://twitter.com/endel" class="fa fa-twitter"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/endel" class="fa fa-linkedin"></a>
+            <a href="mailto:endel.dreyer+portfolio@gmail.com">endel.dreyer@gmail.com</a>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <h1>Latest work</h1>
+        <ul class="blocks">
+          {{#each work}}
+          <li><a href="#" data-id="{{ id }}" title="{{{ title }}}">
+            <span class="front">
+              <span class="icon bg {{ client }}"></span>
+            </span>
+            <span class="back">
+              <span class="bg {{ id }}"></span>
+              <span class="title">{{{ title }}}</span>
+            </span>
+          </a></li>
+          {{/each}}
+        </ul>
+      </section>
+
+      <section>
+        <h1>Game jams</h1>
+        <ul class="blocks">
+          {{#each jams}}
+          <li><a href="#" data-id="{{ id }}" title="{{{ title }}}">
+            <span class="front">
+              <span class="icon bg {{ client }}"></span>
+            </span>
+            <span class="back">
+              <span class="bg {{ id }}"></span>
+              <span class="title">{{{ title }}}</span>
+            </span>
+          </a></li>
+          {{/each}}
+        </ul>
+      </section>
+
+      <section>
+        <h1>Open-source</h1>
+        <ul class="blocks github">
+          {{#each github}}
+          <li><a href="https://github.com/{{ repository }}" data-repository="{{ repository }}" title="{{{ title }}}" target="_blank">
+            <span class="front">
+              <span class="star-container">
+                <span class="fa fa-star"></span>
+                <span class="count"></span>
+              </span>
+              <span class="icon bg {{ id }}"></span>
+              <span class="title">{{{ title }}}</span>
+            </span>
+            <span class="back">
+              <span class="title">{{{ description }}}</span>
+            </span>
+          </a></li>
+          {{/each}}
+        </ul>
+        <p>
+          I’ve also contributed to
+          <a target="_blank" href="https://github.com/GoodBoyDigital/pixi.js/commits?author=endel">pixi.js</a>,
+          <a target="_blank" href="https://github.com/phoenixframework/phoenix/commits?author=endel">phoenix</a>,
+          <a target="_blank" href="https://github.com/marmelab/ng-admin/commits?author=endel">ng-admin</a>,
+          <a target="_blank" href="https://github.com/zordius/lightncandy/commits?author=endel">lightncandy</a>,
+          <a target="_blank" href="https://github.com/tweenjs/tween.js/commits?author=endel">tween.js</a>,
+          <a target="_blank" href="https://github.com/jamesotron/faye-rails/commits?author=endel">faye-rails</a>,
+          <a target="_blank" href="https://github.com/nbudin/devise_cas_authenticatable/commits?author=endel">devise_cas_authenticatable</a>,
+          and <a target="_blank" href="https://github.com/endel">more</a>.
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/mediaelement/build/mediaelement.min.js"></script>
+    <script src="/bower_components/fetch/fetch.js"></script>
+    <script src="/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/main.js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
