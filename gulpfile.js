@@ -257,6 +257,7 @@ gulp.task('default', ['clean'], function () {
 
 gulp.task('deploy', ['build'], function() {
   return gulp.src('dist/**/*').pipe($.ghPages({
+    branch: 'master',
     remoteUrl: "https://github.com/endel/endel.github.io.git"
   }));
 });
