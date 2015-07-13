@@ -1,0 +1,345 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700);
+
+$color-negative = white
+$color-0 = #000
+$color-1 = #9c9c9c
+$default-margin = 14px
+
+$break-small = 430px
+$break-medium = 900px
+$break-large = 1200px
+
+.me-plugin
+  position inherit
+
+*
+  margin 0
+  padding 0
+
+body
+  font-family 'Lora', serif;
+  font-size 22px
+  color $color-0
+
+div.container
+  padding $default-margin * 4
+  margin 0 auto
+  position relative
+
+  @media screen and (min-width: $break-small)
+    width 422px
+  @media screen and (min-width: $break-medium)
+    width 850px
+  @media screen and (min-width: $break-large)
+    width 1064px
+  @media screen and (max-width: 500px)
+    width 204px
+    text-align center
+    .left
+      float none
+      width auto
+
+a
+  color inherit
+  &:hover
+    color $color-1
+
+p
+  margin $default-margin 0
+  font-size 18px
+
+h1, h2, h3, h4
+  font-weight normal
+
+h1
+  font-size 22px
+
+h2
+  font-size 22px
+  color $color-1
+
+header
+  display table
+  div.left
+    width 130px
+    float left
+    img
+      width 100px
+      height 100px
+      border-radius 50%
+      border 2px solid $color-1
+
+  div.right
+    padding-top 14px
+    float left
+    .social
+      .fa
+        color $color-0
+        font-size 20px
+        text-decoration none
+
+      a
+        color $color-1
+        font-size 12px
+
+section
+  clear both
+  h1
+    margin-top 50px
+    margin-bottom $default-margin
+
+ul.blocks
+  display block
+
+  &.github
+    li
+      a
+        transition all 0.5s
+        width 196px
+        height 196px
+        border 2px solid $color-0
+        color $color-0
+        background $color-negative
+        text-decoration none
+
+        span.star-container
+          font-size 16px
+          position absolute
+          top $default-margin - ($default-margin / 2)
+          left $default-margin - ($default-margin / 2)
+
+        span.icon
+          bottom $default-margin * 2
+
+        span.back
+          span.title
+            background none
+
+        &:hover
+          span.front
+            opacity 1
+            span.title
+              opacity 0
+              transform translateY(-5px)
+            span.icon
+              transform translateY(-5px)
+          span.back
+            opacity 1
+            span.title
+              opacity 1
+              transform translateY(0)
+            span.bg
+              transform translateY(0)
+              opacity 1
+
+
+  li
+    display inline-block
+    margin-bottom 6px;
+    &:not(:last-child)
+      margin-right 8px;
+
+    a
+      font-size 18px
+      color $color-negative
+      position relative
+      width 200px
+      height 200px
+      display inline-block
+      background $color-0
+      overflow hidden
+
+      span.title
+        transition all 0.5s
+        display block
+        position absolute
+        bottom 0
+        padding $default-margin 0
+        text-align center
+        width 100%
+
+      span.front
+        display block
+        transition opacity 0.5s
+        opacity 1
+      span.back
+        display block
+        transition opacity 0.5s
+        opacity 0
+        span.title
+          transition-delay 0.2s
+          opacity 0
+          background rgba(0,0,0,0.70)
+          transform translateY(5px)
+        span.bg
+          transition all 0.5s
+          opacity 0
+          transform translateY(5px)
+
+      &:hover
+        span.front
+          opacity 0
+          span.icon
+            transform translateY(-5px)
+        span.back
+          opacity 1
+          span.title
+            opacity 1
+            transform translateY(0)
+          span.bg
+            transform translateY(0)
+            opacity 1
+
+      span.icon
+        transition transform 0.5s
+        display block
+        position absolute
+        left 0
+        right 0
+        bottom 0
+        top 0
+        margin auto
+
+      span.front
+        opacity 1
+
+span.bg
+  display block
+  &.corabell
+    sprite $corabell
+  &.rufus
+    sprite $rufus
+  &.dark-light
+    sprite $dark_light
+  &.nimble-forge
+    sprite $nimble_forge
+  &.app-globeleza
+    sprite $app_globeleza
+  &.redbull-hino
+    sprite $redbull_hino
+  &.hellmanns-gwu
+    sprite $hellmanns_gwu
+  &.axe-throneoflove
+    sprite $axe_throneoflove
+  &.cheetos-kungfu
+    sprite $cheetos_kungfu
+  &.fiat-bravorama
+    sprite $fiat_bravorama
+  &.fundacaolemann-masterbrand
+    sprite $fundacaolemann_masterbrand
+  &.google-wcdashboard
+    sprite $google_wcdashboard
+
+  // github
+  &.hook
+    sprite $hook
+  &.js2php
+    sprite $js2php
+  &.joyjs
+    sprite $joyjs
+  &.generator-modern-frontend
+    sprite $generator_modern_frontend
+
+  // work
+  &.google
+    sprite $google
+  &.fundacao-lemann
+    sprite $fundacao_lemann
+  &.fiat
+    sprite $fiat
+  &.cheetos
+    sprite $cheetos
+  &.axe
+    sprite $axe
+  &.hellmanns
+    sprite $hellmanns
+  &.redbull
+    sprite $redbull
+  &.globo
+    sprite $globo
+
+  // jams
+  &.ludum-dare-32
+    sprite $ludum_dare_32
+  &.spjam
+    sprite $spjam
+  &.global-game-jam
+    sprite $global_game_jam
+
+div.modal
+  transition all 0.5s
+  z-index 1000
+  position fixed
+  color $color-negative
+  background $color-0
+  height 100%
+  width 100%
+  overflow scroll
+
+  .container
+    margin $default-margin auto
+
+  &.hidden
+    height 0
+
+  a.close
+    position absolute
+    right $default-margin * 4
+    display inline-block
+    sprite($close)
+
+  span.bg
+    transform scale(0.5)
+  header
+    div.left
+      position relative
+      height 100px
+      width 170px
+      span.bg
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        margin auto
+    p
+      font-size 12px
+      margin 6px 0
+      color $color-1
+
+  div.main-item
+    text-align center
+    img, iframe
+      max-height 380px
+      @media screen and (min-width: $break-small)
+        max-width 422px
+      @media screen and (min-width: $break-medium)
+        max-width 850px
+      @media screen and (min-width: $break-large)
+        max-width 1200px
+      @media screen and (max-width: 500px)
+        max-width 204px
+
+
+  nav.scroll-x
+    height 106px
+    overflow scroll
+    ul.gallery
+      margin 0 auto
+      text-align center
+      li
+        display inline-block
+        a
+          position relative
+          top 1px
+          transition opacity 0.5s
+          display inline-block
+          width 100px
+          height 100px
+          opacity 0.6
+          &:focus
+            top 0
+            opacity 1
+          &:hover
+            opacity 1
+
