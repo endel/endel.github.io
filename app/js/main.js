@@ -1,13 +1,13 @@
 /* jshint devel:true */
 
-// var repositories = document.querySelectorAll('.blocks.github a');
-// for (let i=0; i<repositories.length;i++) {
-//   fetch("https://api.github.com/repos/" + repositories[i].dataset.repository).then(function(response) {
-//     return response.json();
-//   }).then(function(json) {
-//     repositories[i].querySelector('span.count').innerText = json.stargazers_count
-//   })
-// }
+var repositories = document.querySelectorAll('.blocks.github a');
+for (let i=0; i<repositories.length;i++) {
+  fetch("https://api.github.com/repos/" + repositories[i].dataset.repository).then(function(response) {
+    return response.json();
+  }).then(function(json) {
+    repositories[i].querySelector('span.count').innerText = json.stargazers_count
+  })
+}
 
 var modal = $('.modal');
 
