@@ -268,7 +268,7 @@ span.bg
 
 div.modal
   transition all 0.5s
-  z-index 1000
+  z-index 100
   position fixed
   color $color-negative
   background $color-0
@@ -276,13 +276,26 @@ div.modal
   width 100%
   overflow scroll
 
-  .container
+  div.container
     margin $default-margin auto
+
+    @media screen and (max-width: 500px)
+      padding $default-margin * 4
+      width 250px
+      text-align center
+      .left, .right
+        float none
+        width auto
+      header
+        width 100%
+        margin 0 auto
+
 
   &.hidden
     height 0
 
   a.close
+    z-index 1000
     position absolute
     right $default-margin * 4
     display inline-block
@@ -322,7 +335,7 @@ div.modal
 
 
   nav.scroll-x
-    height 106px
+    height 132px
     overflow scroll
     ul.gallery
       margin 0 auto
