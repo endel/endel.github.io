@@ -135,7 +135,7 @@
       "source": "youtube",
       "thumbnail": "http://img.youtube.com/vi/dY7zEjS0wC8/2.jpg"
     },
-    "description": "<p>We built it in 48h for SPJam. Technology stack: JavaScript, pixi.js</p><p>Source code: <a href=\"https://github.com/sandroweb/spjam\">https://github.com/sandroweb/spjam</a></p>"
+    "description": "<p>We built it in 48h for SPJam.</p><p>Technology stack: JavaScript, pixi.js</p><p>Source code: <a href=\"https://github.com/sandroweb/spjam\">https://github.com/sandroweb/spjam</a></p>"
 
   },{
     "id": "corabell",
@@ -143,7 +143,7 @@
     "client": "global-game-jam",
     "company": "Global Game Jam",
     "year": "2013",
-    "description": "<p>We built it in 48h for Global Game Jam. Technology stack: JavaScript, phaser.js</p><p>Source code: <a href=\"https://github.com/endel/GGJ14\">https://github.com/endel/GGJ14</a></p>"
+    "description": "<p>We built it in 48h for Global Game Jam.</p><p>Technology stack: JavaScript, phaser.js</p><p>Source code: <a href=\"https://github.com/endel/GGJ14\">https://github.com/endel/GGJ14</a></p>"
 
   },{
     "id": "rufus",
@@ -151,7 +151,7 @@
     "client": "global-game-jam",
     "company": "Global Game Jam",
     "year": "2012",
-    "description": "<p>Rufus and The Magic Mushrooms was the first game-jam I've ever participated. We've built it in 48h using Flash and the Flixel engine.</p><p>Source code: <a href=\"https://github.com/endel/GGJ12\">https://github.com/endel/GGJ12</a></p>",
+    "description": "<p>Rufus and The Magic Mushrooms was the first game-jam I've ever participated. We've built it in 48h.</p><p>Technology stack: Flash, Flixel</p><p>Source code: <a href=\"https://github.com/endel/GGJ12\">https://github.com/endel/GGJ12</a></p>",
     "video": {
       "url": "//www.youtube.com/embed/KiJ0AkPyu9s",
       "source": "youtube",
