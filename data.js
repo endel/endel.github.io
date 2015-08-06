@@ -122,7 +122,7 @@
       "source": "youtube",
       "thumbnail": "http://img.youtube.com/vi/XRLAF6ryXnQ/2.jpg"
     },
-    "description": "<p>This was the most fun game-jam ever since. We built it in 72h for Ludum Dare 32. Technology stack: JavaScript, pixi.js</p><p>Source code: <a href=\"https://github.com/endel/LD32\">https://github.com/endel/LD32</a></p>"
+    "description": "<p>This was the most fun game-jam ever since. We built it in 72h for Ludum Dare 32.</p><p>Technology stack: JavaScript, pixi.js</p><p>Source code: <a href=\"https://github.com/endel/LD32\">https://github.com/endel/LD32</a></p>"
 
   }, {
     "id": "dark-light",
