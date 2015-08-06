@@ -5,7 +5,7 @@
     "client": "fundacao-lemann",
     "year": "2015",
     "company": "Fundação Lemann",
-    "description": "<p>A WordPress custom theme. Here I've developed a custom module system and automatic social media importing. It is very easy to use for the end-user to create and associate new modules to it's pages.</p>"
+    "description": "<p>A WordPress custom theme. Here I've developed a custom module system and automatic social media importing. It is very easy to use for the end-user to create and associate new modules to it's pages.</p><p>Technology stack: WordPress, HTML5</p>"
 
   },{
     "id": "redbull-hino",
@@ -26,7 +26,7 @@
     "client": "google",
     "year": "2014",
     "company": "Google",
-    "description": "<p>The goal was to create an environment which would keep the Google Doodler's team aware of everything that happened in the World Cup. Technology stack: Phantomjs for scraping and saving Instagram screenshots, Ruby, Rails, and Async Message-queue Processing for social media data import.</p>"
+    "description": "<p>The goal was to create an environment which would keep the Google Doodler's team aware of everything that happened in the World Cup.</p><p>Technology stack: Phantomjs for scraping and saving Instagram screenshots, Ruby, Rails, and Async Message-queue Processing for social media data import.</p>"
 
   },{
     "id": "fiat-bravorama",
@@ -39,7 +39,7 @@
       "source": "vimeo",
       "thumbnail": "https://i.vimeocdn.com/video/501413653_200x150.jpg"
     },
-    "description": "<p>Bravorama was an interactive installation for \"Salão do Automóvel\" in São Paulo - Brazil. I was responsible to integrate physical controllers with the game and to make the cars move through the trail. Technology stack: Unity3d, Serial communication and Python - an Autodesk Maya script to extract trail points for the game.</p>"
+    "description": "<p>Bravorama was an interactive installation for \"Salão do Automóvel\" in São Paulo - Brazil. I was responsible to integrate physical controllers with the game and to make the cars move through the trail.</p><p>Technology stack: Unity3d, Serial communication and Python (Autodesk Maya script to extract trail points for the game)</p>"
 
   },{
     "id": "cheetos-kungfu",
@@ -47,7 +47,7 @@
     "client": "cheetos",
     "year": "2014",
     "company": "Pepsi-co",
-    "description": "<p>A rock-paper-scissors style game. I was responsible for the real-time PvP communication and backend services. Technology stack: PHP, WebSockets, HTML5</p>"
+    "description": "<p>A rock-paper-scissors style game. I was responsible for the real-time PvP communication and backend services.</p><p>Technology stack: PHP, WebSockets, HTML5</p>"
 
   },{
     "id": "hellmanns-gwu",
@@ -60,7 +60,7 @@
       "source": "vimeo",
       "thumbnail": "https://i.vimeocdn.com/video/503364525_200x150.jpg"
     },
-    "description": "<p>A real-time campaign where users can follow the sustainable farming process via a livestream feed from cameras placed in the farmer’s hats. For ten days, visitors could interact with the farmers who grow the tomatoes, get to know them, and ask questions. Technology stack: PHP, HTML5</p>"
+    "description": "<p>A real-time campaign where users can follow the sustainable farming process via a livestream feed from cameras placed in the farmer’s hats. For ten days, visitors could interact with the farmers who grow the tomatoes, get to know them, and ask questions.</p><p>Technology stack: PHP, HTML5</p>"
 
   },{
     "id": "axe-throneoflove",
@@ -73,7 +73,7 @@
       "source": "vimeo",
       "thumbnail": "https://i.vimeocdn.com/video/469604038_200x150.jpg"
     },
-    "description": "Which is the most popular family name in Brazil? In this campaign we've indexed the number of friends, checkins, and all the data we could extract from user's Facebook, and provide a real-time analysis of that. Technology stack: PHP, Laravel, MySQL."
+    "description": "<p>Which is the most popular family name in Brazil? In this campaign we've indexed the number of friends, checkins, and all the data we could extract from user's Facebook, and provide a real-time analysis of that.</p><p>Technology stack: PHP, Laravel, MySQL, Facebook Graph API.</p>"
 
   },{
     "id": "app-globeleza",
@@ -86,7 +86,7 @@
       "source": "mp4",
       "thumbnail": "https://i.vimeocdn.com/video/469604038_200x150.jpg"
     },
-    "description": "<p>I was responsible for the back-end and administrator implementation. Technology stack: PHP, MongoDB</p>"
+    "description": "<p>This iOS app help people to find attractive places to go during Brazil's Carnaval. I was responsible to develop the app's back-end and administrator to manage it's content.</p><p>Technology stack: PHP, MongoDB, Geo-location.</p>"
 
   }],
 
