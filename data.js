@@ -122,7 +122,7 @@
       "source": "youtube",
       "thumbnail": "http://img.youtube.com/vi/XRLAF6ryXnQ/2.jpg"
     },
-    "description": "<p>This was the most fun game-jam ever since. We built it in 72h for Ludum Dare 32.</p><p>Technology stack: JavaScript, pixi.js</p><p>Source code: <a href=\"https://github.com/endel/LD32\">https://github.com/endel/LD32</a></p>"
+    "description": "<p>This was the most fun game-jam ever since. We built it in 72h for Ludum Dare 32, which the theme was \"An Unconventional Weapon\".</p><p>It got listed under four Top-100 categories: <a href=\"http://ludumdare.com/compo/ludum-dare-32/?action=top&cat=Graphics(Jam)\">Graphics (6 TIE)</a>, <a href=\"http://ludumdare.com/compo/ludum-dare-32/?action=top&cat=Humor(Jam)\">Humor (12 TIE)</a>, <a href=\"http://ludumdare.com/compo/ludum-dare-32/?action=top&cat=Theme(Jam)\">Theme (15 TIE)</a>, <a href=\"http://ludumdare.com/compo/ludum-dare-32/?action=top&cat=Mood(Jam)\">Mood (60 TIE)</a>, <a href=\"http://ludumdare.com/compo/ludum-dare-32/?action=top&cat=Overall(Jam)\">Overall (76 TIE)</a></p><p>Technology stack: JavaScript, pixi.js</p><p>Source code: <a href=\"https://github.com/endel/LD32\">https://github.com/endel/LD32</a></p>"
 
   }, {
     "id": "dark-light",
