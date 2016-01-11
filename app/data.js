@@ -91,6 +91,11 @@
   }],
 
   "github": [{
+    "id": "colyseus",
+    "title": "Colyseus",
+    "description": "MMO Game Server for Node.js",
+    "repository": "gamestdio/colyseus"
+  }, {
     "id": "hook",
     "title": "hook",
     "description": "Backend as a Service",
